@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.scan).setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
             startActivityForResult(
-                    PreviewActivity.getStartingIntent(MainActivity.this, BarcodeType.PDF417.type),
+                    PreviewActivity.getStartingIntent(MainActivity.this),
                     BARCODE_RESULT
             );
             }
